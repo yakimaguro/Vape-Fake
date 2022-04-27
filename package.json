@@ -1,0 +1,32 @@
+{
+  "name": "vapev4",
+  "version": "4.0.7",
+  "description": "FakeV4",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "yakimaguro",
+  "devDependencies": {
+    "electron": "^18.1.0",
+    "electron-packager": "^15.5.1"
+  },
+  "build": {
+    "appId": "me.yakimaguro.fakev4",
+    "files": [
+      "**/*"
+    ],
+    "mac": {
+      "target": "dmg",
+      "icon": "img/icon.png"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "img/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
